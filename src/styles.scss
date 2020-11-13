@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+div.nav-bar {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button.primary {
+        color: #FFF;
+        background: cornflowerblue;
+        min-height: 30px;
+        height: 5.1vh;
+        width: 100%;
+    }
+}
+div.box-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.box {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        &.green {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: green;
+        }
+        &.red {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: red;
+        }
+        &.blue {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: blue;
+        }
+    }
+
+}
